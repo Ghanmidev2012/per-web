@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: beige;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo{
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.navigation:hover{
+    color: black;
+}
+
+
+section.home{
+    padding: 100px 100px;
+    background: url(imgaes/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_575670-1159.avif) no-repeat right;
+    background-size:cover ;
+    background-position: center;
+    background-attachment:fixed ;
+}
+
+.home-btn{
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color-scheme: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.home-btn::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width:100% ;
+    height: 100%;
+    background-color: blue;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.home-btn::before{
+    content: "";
+    background: linear-gradient(
+        45deg,#ff000f,#ff7300,#ffb00f
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100%+4px);
+    height:  calc(100%+4px);
+}
+
+.tools{
+    background-color: beige;
+}
+
+.pro{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Contact{
+    background-color: beige;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
